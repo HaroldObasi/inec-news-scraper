@@ -12,8 +12,6 @@ def send_emails(reciever, payload, data):
   msg["From"] = "Harold's Automated Bot"
   msg["To"] = reciever
   msg.set_content(payload["body"])
-
-  template = open('proj1/template.html', 'r')
   msg.add_alternative(generate_html(data), subtype='html')
   with smtplib.SMTP_SSL(host="smtp.gmail.com", port=465) as smtp:
     smtp.login("haroldobasibackup@gmail.com", app_password)
