@@ -1,5 +1,4 @@
 import smtplib
-import jinja2
 from email.message import EmailMessage
 from template import generate_html
 
