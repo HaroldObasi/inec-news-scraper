@@ -31,4 +31,5 @@ for i in range(len(news_dates)):
   }
 
 send_emails("haroldobasi2k19@gmail.com", {"subject": "Testing Final", "body": "Placeholder"}, news)
+print("news: ", news)
 driver.quit()
